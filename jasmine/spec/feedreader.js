@@ -76,7 +76,7 @@ $(() => {
         */
 
         beforeEach((done) => { // loadFeed() is async so it requires the use of beforeEach and async done() function
-            loadFeed(0, done());
+            loadFeed(0, done);
         });
         it('Feed have at least one entry on container', () => {
             const feedList = $('.feed .entry');
